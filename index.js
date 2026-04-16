@@ -15,7 +15,7 @@ program.command('add')
 
         try {
             const data = fs.readFileSync('todos.json', 'utf-8');
-            const todos = JSON.parse(data);
+            todos = JSON.parse(data);
         } catch (err) {
             todos = [];
         }
